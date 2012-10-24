@@ -87,7 +87,10 @@ This can be used to hunt leaks and to profile memory usage.
 
 =item walk_arena
 
-Returns an array reference containing all the live SVs.
+Returns an array reference containing all the live SVs. Note that this will
+include a reference back to itself, so you should manually clear this array
+(via C<@$arena = ()>) when you are done with it, if you don't want to create a
+memory leak.
 
 =item arena_ref_counts
 
