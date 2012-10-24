@@ -18,7 +18,7 @@ foreach my $value (@$array) {
     $found = $value;
 }
 is($$found, $foo, 'found foo');
-$array = undef;
+@$array = ();
 
 # make a circular reference
 my $ptr;
@@ -38,4 +38,4 @@ foreach my $value (@$array) {
     $found = $value;
 }
 is($found->[0], "missing!", "found missing item");
-$array = undef;
+@$array = ();
