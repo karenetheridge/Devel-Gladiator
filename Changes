@@ -1,5 +1,8 @@
 Revision history for Perl extension Devel::Gladiator.
 
+        - walk_arena() now sorts by class name when refcounts are equal, for
+          easier comparison between successive runs (Karen Etheridge)
+
 0.02  Wed Oct 24 13:30:24 2012
 	- fix test failures, and note this caveat in the docs
 
