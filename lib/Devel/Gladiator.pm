@@ -64,15 +64,15 @@ Devel::Gladiator - Walk Perl's arena
 
 =head1 SYNOPSIS
 
-	use Devel::Gladiator qw(walk_arena arena_ref_counts arena_table);
+  use Devel::Gladiator qw(walk_arena arena_ref_counts arena_table);
 
-    my $all = walk_arena();
+  my $all = walk_arena();
 
-	foreach my $sv ( @$all ) {
-		warn "live object: $sv\n";
-	}
+  foreach my $sv ( @$all ) {
+      warn "live object: $sv\n";
+  }
 
-	warn arena_table(); # prints counts keyed by class
+  warn arena_table(); # prints counts keyed by class
 
 =head1 DESCRIPTION
 
