@@ -1,5 +1,8 @@
 Revision history for Perl extension Devel::Gladiator.
 
+0.04  Tue May 14 2013
+        - fix pod formatting (Curtis Brandt)
+
 0.03  Tue May 14 2013
         - walk_arena() now sorts by class name when refcounts are equal, for
           easier comparison between successive runs (Karen Etheridge)
