@@ -1,3 +1,4 @@
+.gitignore
 Changes
 Gladiator.xs
 lib/Devel/Gladiator.pm
