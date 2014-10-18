@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - documentation updates (thanks, mohawk!)
 
 0.05    20142014-10-18 06:51:53Z
         - minor documentation updates
