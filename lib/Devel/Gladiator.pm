@@ -60,6 +60,12 @@ __END__
 
   warn arena_table(); # prints counts keyed by class
 
+  # how to spot new entries in the arena after running some code
+  my %dump1 = map { ("$_" => $_) } walk_arena();
+  # do something
+  my %dump2 = map { $dump1{$_} ? () : ("$_" => $_) } walk_arena();
+  use Devel::Peek; Dump \%dump2;
+
 =head1 DESCRIPTION
 
 L<Devel::Gladiator> iterates Perl's internal memory structures and can be used
