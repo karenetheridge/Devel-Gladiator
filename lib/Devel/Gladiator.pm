@@ -65,7 +65,7 @@ Devel::Gladiator - Walk Perl's arena
 
 =head1 DESCRIPTION
 
-L<Devel::Gladiator> iterate's Perl's internal memory structures and can be used
+L<Devel::Gladiator> iterates Perl's internal memory structures and can be used
 to enumerate all the currently live SVs.
 
 This can be used to hunt leaks and to profile memory usage.
@@ -82,6 +82,8 @@ include a reference back to itself, so you should manually clear this array
 memory leak.
 
 =item arena_ref_counts
+
+=for stopwords reftype
 
 Returns a hash keyed by class and reftype of all the live SVs.
 
