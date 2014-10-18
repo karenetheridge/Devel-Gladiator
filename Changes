@@ -3,6 +3,7 @@ Revision history for {{$dist->name}}
 {{$NEXT}}
         - minor documentation updates
         - converted packaging to Dist::Zilla; declared correct prerequisites
+        - updated ppport.h to latest version
 
 0.04    2013-05-14
         - fix pod formatting (Curtis Brandt)
