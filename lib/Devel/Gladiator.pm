@@ -2,6 +2,7 @@ use strict;
 use warnings;
 package Devel::Gladiator;
 # ABSTRACT: Walk Perl's arena
+# KEYWORDS: development debugging memory allocation usage leaks cycles arena
 
 use base 'Exporter';
 
