@@ -105,6 +105,36 @@ Formats a string table based on C<arena_ref_counts> suitable for printing.
 
 =back
 
+=head1 SEE ALSO
+
+=over 4
+
+=item *
+
+L<Become a hero plumber|http://blog.woobling.org/2009/05/become-hero-plumber.html>
+
+=item *
+
+L<Test::Memory::Cycle>
+
+=item *
+
+L<Devel::Cycle>
+
+=item *
+
+L<Devel::Refcount>
+
+=item *
+
+L<Devel::Leak>
+
+=item *
+
+L<Data::Structure::Util>
+
+=back
+
 =head1 COPYRIGHT AND LICENCE
 
 Put the correct copyright and licence information here.
