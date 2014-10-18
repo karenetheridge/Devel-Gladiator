@@ -72,16 +72,14 @@ This can be used to hunt leaks and to profile memory usage.
 
 =head1 EXPORTS
 
-=over 4
-
-=item walk_arena
+=head2 walk_arena
 
 Returns an array reference containing all the live SVs. Note that this will
 include a reference back to itself, so you should manually clear this array
 (via C<@$arena = ()>) when you are done with it, if you don't want to create a
 memory leak.
 
-=item arena_ref_counts
+=head2 arena_ref_counts
 
 =for stopwords reftype
 
@@ -90,11 +88,9 @@ Returns a hash keyed by class and reftype of all the live SVs.
 This is a convenient way to find out how many objects of a given class exist at
 a certain point.
 
-=item arena_table
+=head2 arena_table
 
 Formats a string table based on C<arena_ref_counts> suitable for printing.
-
-=back
 
 =head1 SEE ALSO
 
