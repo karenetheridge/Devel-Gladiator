@@ -1,0 +1,106 @@
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Devel::Gladiator - Walk Perl's arena
+
+=head1 VERSION
+
+version 0.05
+
+=head1 SYNOPSIS
+
+  use Devel::Gladiator qw(walk_arena arena_ref_counts arena_table);
+
+  my $all = walk_arena();
+
+  foreach my $sv ( @$all ) {
+      warn "live object: $sv\n";
+  }
+
+  warn arena_table(); # prints counts keyed by class
+
+=head1 DESCRIPTION
+
+L<Devel::Gladiator> iterates Perl's internal memory structures and can be used
+to enumerate all the currently live SVs.
+
+This can be used to hunt leaks and to profile memory usage.
+
+=head1 EXPORTS
+
+=head2 walk_arena
+
+Returns an array reference containing all the live SVs. Note that this will
+include a reference back to itself, so you should manually clear this array
+(via C<@$arena = ()>) when you are done with it, if you don't want to create a
+memory leak.
+
+=head2 arena_ref_counts
+
+=for stopwords reftype
+
+Returns a hash keyed by class and reftype of all the live SVs.
+
+This is a convenient way to find out how many objects of a given class exist at
+a certain point.
+
+=head2 arena_table
+
+Formats a string table based on C<arena_ref_counts> suitable for printing.
+
+=head1 SEE ALSO
+
+=over 4
+
+L<Become a hero plumber|http://blog.woobling.org/2009/05/become-hero-plumber.html>
+L<Test::Memory::Cycle>
+L<Devel::Cycle>
+L<Devel::Refcount>
+L<Devel::Leak>
+L<Data::Structure::Util>
+
+=back
+
+=head1 AUTHOR
+
+Artur Bergman <sky@apple.com>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2006 by Artur Bergman.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=head1 CONTRIBUTORS
+
+=for stopwords Karen Etheridge יובל קוג'מן (Yuval Kogman) Jesse Luehrs Brad Fitzpatrick Curtis Brandt
+
+=over 4
+
+=item *
+
+Karen Etheridge <ether@cpan.org>
+
+=item *
+
+יובל קוג'מן (Yuval Kogman) <nothingmuch@woobling.org>
+
+=item *
+
+Jesse Luehrs <doy@tozt.net>
+
+=item *
+
+Brad Fitzpatrick <brad@danga.com>
+
+=item *
+
+Curtis Brandt <curtisjbrandt@gmail.com>
+
+=back
+
+=cut
