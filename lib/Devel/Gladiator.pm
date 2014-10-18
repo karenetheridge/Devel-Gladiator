@@ -99,4 +99,4 @@ L<Devel::Refcount>
 L<Devel::Leak>
 L<Data::Structure::Util>
 
-=cute
+=cut
