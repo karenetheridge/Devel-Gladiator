@@ -4,9 +4,7 @@ use 5.008;
 use strict;
 use warnings;
 
-require Exporter;
-
-our @ISA = qw(Exporter);
+use base 'Exporter';
 
 our %EXPORT_TAGS = ( 'all' => [ qw(
 	walk_arena arena_ref_counts arena_table
