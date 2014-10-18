@@ -1,7 +1,7 @@
-package Devel::Gladiator;
-
 use strict;
 use warnings;
+package Devel::Gladiator;
+# ABSTRACT: Walk Perl's arena
 
 use base 'Exporter';
 
@@ -47,10 +47,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Devel::Gladiator - Walk Perl's arena
-
 =head1 SYNOPSIS
 
   use Devel::Gladiator qw(walk_arena arena_ref_counts arena_table);
@@ -94,40 +90,12 @@ Formats a string table based on C<arena_ref_counts> suitable for printing.
 
 =head1 SEE ALSO
 
-=over 4
-
-=item *
-
+=for :list
 L<Become a hero plumber|http://blog.woobling.org/2009/05/become-hero-plumber.html>
-
-=item *
-
 L<Test::Memory::Cycle>
-
-=item *
-
 L<Devel::Cycle>
-
-=item *
-
 L<Devel::Refcount>
-
-=item *
-
 L<Devel::Leak>
-
-=item *
-
 L<Data::Structure::Util>
-
-=back
-
-=head1 COPYRIGHT AND LICENCE
-
-Copyright (C) 2006 by Artur Bergman
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.6 or,
-at your option, any later version of Perl 5 you may have available.
 
 =cute
