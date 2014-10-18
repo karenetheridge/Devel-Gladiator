@@ -1,21 +1,23 @@
-Revision history for Perl extension Devel::Gladiator.
+Revision history for {{$dist->name}}
 
+{{$NEXT}}
         - minor documentation updates
+        - converted packaging to Dist::Zilla; declared correct prerequisites
 
-0.04  Tue May 14 2013
+0.04    2013-05-14
         - fix pod formatting (Curtis Brandt)
 
-0.03  Tue May 14 2013
+0.03    2013-05-14
         - walk_arena() now sorts by class name when refcounts are equal, for
           easier comparison between successive runs (Karen Etheridge)
 
-0.02  Wed Oct 24 13:30:24 2012
+0.02    2012-10-24 18:30:24Z
 	- fix test failures, and note this caveat in the docs
 
-0.01  Thu Oct  2 09:44:52 2008
+0.01    2008-10-02 13:44:52Z
 	- Prepared for release by Yuval Kogman
 
-0.00_01  Mon Jun 26 15:57:11 2006
+0.00_01 2006-06-26 15:57:11Z
 	- original version; created by h2xs 1.23 with options
 		-A -B -P -c -e -k -n Devel::Gladiator
 

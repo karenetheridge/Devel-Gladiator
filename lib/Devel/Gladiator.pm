@@ -14,10 +14,6 @@ our %EXPORT_TAGS = ( 'all' => [ qw(
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our $VERSION = '0.04';
-our $XS_VERSION = $VERSION;
-$VERSION = eval $VERSION;
-
 sub arena_ref_counts {
     my $all = Devel::Gladiator::walk_arena();
     my %ct;
@@ -41,8 +37,13 @@ sub arena_table {
     return $ret;
 }
 
-require XSLoader;
-XSLoader::load('Devel::Gladiator', $XS_VERSION);
+use XSLoader;
+XSLoader::load(
+    __PACKAGE__,
+    exists $Devel::Gladiator::{VERSION}
+        ? ${ $Devel::Gladiator::{VERSION} }
+        : (),
+);
 
 1;
 __END__
