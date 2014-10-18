@@ -8,13 +8,6 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 
-# Items to export into callers namespace by default. Note: do not export
-# names by default without a very good reason. Use EXPORT_OK instead.
-# Do not simply export all your public functions/methods/constants.
-
-# This allows declaration       use Devel::Gladiator ':all';
-# If you do not need this, moving things directly into @EXPORT or @EXPORT_OK
-# will save memory.
 our %EXPORT_TAGS = ( 'all' => [ qw(
 	walk_arena arena_ref_counts arena_table
 ) ] );
@@ -23,7 +16,7 @@ our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our $VERSION = '0.04';
 our $XS_VERSION = $VERSION;
-$VERSION = eval $VERSION;  # see L<perlmodstyle>
+$VERSION = eval $VERSION;
 
 sub arena_ref_counts {
     my $all = Devel::Gladiator::walk_arena();
@@ -50,8 +43,6 @@ sub arena_table {
 
 require XSLoader;
 XSLoader::load('Devel::Gladiator', $XS_VERSION);
-
-# Preloaded methods go here.
 
 1;
 __END__
@@ -136,8 +127,6 @@ L<Data::Structure::Util>
 =back
 
 =head1 COPYRIGHT AND LICENCE
-
-Put the correct copyright and licence information here.
 
 Copyright (C) 2006 by Artur Bergman
 
