@@ -28,8 +28,6 @@ use_ok("Devel::Gladiator");
 
         return bless sub { $foo . $bar . $outer . $bar{baz}} , "Dummy";
     }
-
-
 }
 
 my $sub1 = blah();

@@ -18,12 +18,11 @@ Revision history for {{$dist->name}}
           easier comparison between successive runs (Karen Etheridge)
 
 0.02    2012-10-24 18:30:24Z
-	- fix test failures, and note this caveat in the docs
+        - fix test failures, and note this caveat in the docs
 
 0.01    2008-10-02 13:44:52Z
-	- Prepared for release by Yuval Kogman
+        - Prepared for release by Yuval Kogman
 
 0.00_01 2006-06-26 15:57:11Z
-	- original version; created by h2xs 1.23 with options
-		-A -B -P -c -e -k -n Devel::Gladiator
-
+        - original version; created by h2xs 1.23 with options
+                -A -B -P -c -e -k -n Devel::Gladiator
