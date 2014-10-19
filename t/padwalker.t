@@ -6,7 +6,7 @@ use warnings;
 
 use Test::More;
 use Devel::Peek;
-my $has_padwalker = eval "use PadWalker qw(peek_sub closed_over); 1";
+my $has_padwalker = eval "require PadWalker; 1";
 
 if($has_padwalker) {
     plan tests => 5;
@@ -35,7 +35,7 @@ my $sub1 = blah();
     my $array = Devel::Gladiator::walk_arena();
     foreach my $value (@$array) {
         next unless ref ($value) eq 'Dummy';
-        my $peek_sub = peek_sub($value);
+        my $peek_sub = PadWalker::peek_sub($value);
 
         is(${$peek_sub->{'$foo'}}, "foo");
         is(${$peek_sub->{'$outer'}}, "outer"); # used to be testing for 'undef', but it's a closure var, should be refcnt = 2 (one in Dummy, one in sub blah)
