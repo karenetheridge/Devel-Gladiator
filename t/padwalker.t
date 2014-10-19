@@ -9,13 +9,12 @@ use Devel::Peek;
 my $has_padwalker = eval "use PadWalker qw(peek_sub closed_over); 1";
 
 if($has_padwalker) {
-    plan tests => 6;
+    plan tests => 5;
 } else {
     plan skip_all => "No PadWalker installed";
 }
 
-use_ok("Devel::Gladiator");
-
+use Devel::Gladiator;
 
 {
     my $outer = "outer";

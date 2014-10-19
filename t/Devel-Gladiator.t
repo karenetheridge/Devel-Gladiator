@@ -1,9 +1,9 @@
 use strict;
 use warnings;
 
-use Test::More tests => 6;
+use Test::More tests => 5;
 use Scalar::Util qw(weaken refaddr);
-BEGIN { use_ok('Devel::Gladiator') };
+use Devel::Gladiator;
 use Devel::Peek;
 
 my $found;
