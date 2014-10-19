@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 # this module runs if padwalker is installed
 # it tests getting data through padwalker that is has found on the arena
 

@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 use strict;
 use Test::More tests => 6;
 use Scalar::Util qw(weaken refaddr);
