@@ -5,7 +5,6 @@
 
 use Test::More;
 use Devel::Peek;
-use Data::Dumper;
 my $has_padwalker = eval "use PadWalker qw(peek_sub closed_over); 1";
 
 if($has_padwalker) {
