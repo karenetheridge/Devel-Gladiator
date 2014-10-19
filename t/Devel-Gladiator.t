@@ -1,4 +1,6 @@
 use strict;
+use warnings;
+
 use Test::More tests => 6;
 use Scalar::Util qw(weaken refaddr);
 BEGIN { use_ok('Devel::Gladiator') };
