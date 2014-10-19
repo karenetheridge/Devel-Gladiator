@@ -95,6 +95,11 @@ a certain point.
 
 Formats a string table based on C<arena_ref_counts> suitable for printing.
 
+=head1 LIMITATIONS
+
+This code may not work on perls 5.6.x and 5.8.x if L<PadWalker> is installed.
+(Patches gratefully accepted!)
+
 =head1 SEE ALSO
 
 =for :list

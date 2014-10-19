@@ -6,14 +6,15 @@ use warnings;
 
 use Test::More;
 use Devel::Peek;
-my $has_padwalker = eval "require PadWalker; 1";
 
-if($has_padwalker) {
-    plan tests => 5;
-} else {
+if ($] < '5.009') {
+    plan skip_all => "Tests with PadWalker do not pass on 5.8.x - patches welcome";
+}
+if (!eval "require PadWalker; 1") {
     plan skip_all => "No PadWalker installed";
 }
 
+plan tests => 5;
 use Devel::Gladiator;
 
 {

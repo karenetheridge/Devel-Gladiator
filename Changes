@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+        - skip failing PadWalker tests on < 5.009 (RT#99581)
 
 0.06    2014-10-19 01:49:27Z
         - documentation updates (thanks, mohawk!)
