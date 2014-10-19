@@ -49,5 +49,3 @@ my $sub1 = blah();
     }
     $array = undef;
 }
-
-1;
