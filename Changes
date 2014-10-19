@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.06    2014-10-19 01:49:27Z
         - documentation updates (thanks, mohawk!)
 
 0.05    20142014-10-18 06:51:53Z
