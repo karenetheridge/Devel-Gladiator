@@ -103,11 +103,11 @@ This code may not work on perls 5.6.x and 5.8.x if L<PadWalker> is installed.
 =head1 SEE ALSO
 
 =for :list
-L<Become a hero plumber|http://blog.woobling.org/2009/05/become-hero-plumber.html>
-L<Test::Memory::Cycle>
-L<Devel::Cycle>
-L<Devel::Refcount>
-L<Devel::Leak>
-L<Data::Structure::Util>
+* L<Become a hero plumber|http://blog.woobling.org/2009/05/become-hero-plumber.html>
+* L<Test::Memory::Cycle>
+* L<Devel::Cycle>
+* L<Devel::Refcount>
+* L<Devel::Leak>
+* L<Data::Structure::Util>
 
 =cut
