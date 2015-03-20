@@ -4,6 +4,8 @@ package Devel::Gladiator;
 # ABSTRACT: Walk Perl's arena
 # KEYWORDS: development debugging memory allocation usage leaks cycles arena
 
+our $VERSION = '0.08';
+
 use base 'Exporter';
 
 our %EXPORT_TAGS = ( 'all' => [ qw(
@@ -38,9 +40,7 @@ sub arena_table {
 use XSLoader;
 XSLoader::load(
     __PACKAGE__,
-    exists $Devel::Gladiator::{VERSION}
-        ? ${ $Devel::Gladiator::{VERSION} }
-        : (),
+    $VERSION,
 );
 
 1;
