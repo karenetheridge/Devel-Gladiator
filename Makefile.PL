@@ -7,4 +7,5 @@ WriteMakefile(
     VERSION_FROM => 'lib/Devel/Gladiator.pm',
     INSTALLMAN1DIR => 'none',
     INSTALLMAN3DIR => 'none',
+    NORECURS => 1,
 );
