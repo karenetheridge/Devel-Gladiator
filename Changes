@@ -1,5 +1,7 @@
 Revision history for Devel-Gladiator
 
+{{$NEXT}}
+
 0.08    2020-06-11 17:42:46Z
         - fix sample code snippet for spotting new arena entries (mohawk,
           PR#2)

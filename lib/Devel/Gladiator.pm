@@ -4,7 +4,7 @@ package Devel::Gladiator;
 # ABSTRACT: Walk Perl's arena
 # KEYWORDS: development debugging memory allocation usage leaks cycles arena
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 use base 'Exporter';
 
