@@ -12,7 +12,7 @@ Revision history for Devel-Gladiator
 0.06    2014-10-19 01:49:27Z
         - documentation updates (thanks, mohawk!)
 
-0.05    20142014-10-18 06:51:53Z
+0.05    2014-10-18 06:51:53Z
         - minor documentation updates
         - converted packaging to Dist::Zilla; declared correct prerequisites
         - updated ppport.h to latest version
